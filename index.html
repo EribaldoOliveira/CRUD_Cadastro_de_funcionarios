@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<title>CRUD_Cadastro de funcionários</title>
+
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CRUD_Cadastro de funcionários</title>
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 	</head>
+	
 	<body>
 
+		<div class="container">
+
+				<div class="header">
+					<span>Cadastro de funcionários</span>
+					<button onclick="openModal()" id="new">Incluir</i></button>
+				</div><!--Fim da div header-->
+
+				<div class="divTable">
+			      <table>
+			        <thead>
+			          <tr>
+			            <th>Nome</th>
+			            <th>Função</th>
+			            <th>Salário</th>
+			            <th class="acao">Editar</th>
+			            <th class="acao">Excluir</th>
+			          </tr>
+			        </thead>
+
+			        <tbody></tbody>
+			      </table>
+	    		</div> <!--Fim da divTable-->
 
 
+    		<div class="modal-container">
+      			<div class="modal">
+			        <form>
+
+			        	<label for="m-nome">Nome</label>
+			         	<input id="m-nome" type="text" required />
+			  
+			          	<label for="m-funcao">Função</label>
+			          	<input id="m-funcao" type="text" required />
+			  
+			          	<label for="m-salario">Salário</label>
+			          	<input id="m-salario" type="number" required />
+			          	
+			          	<button id="btnSalvar">Salvar</button>
+
+			        </form>
+
+			    </div><!--Fim da div modal-->
+
+      		</div><!--Fim da div modal-container-->
+
+    	</div><!--Fim da div container-->
+			
 		<script src="./assets/js/script.js"></script>
+
 	</body>
+
 </html>
